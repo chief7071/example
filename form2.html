@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="icon.ico" rel="stylesheet" type="text/css" />
-            <link href="icon.ico" rel="shortcut icon" type="image/x-icon" />
-    <title>FominovForm</title>
+    <title>Fominovsite</title>
 </head>
 
 <body>
-    
- <h2>interesting survey</h2>
- 
-    <form method="POST" action="https://formspree.io/kxmb382@gmail.com">
-        <label for="client-name">Client name:</label>
+ <h2>page of order</h2>
+ <img src="https://static1.squarespace.com/static/55819d2de4b0ef8113256105/t/58e3e2c1d2b857cb9a4a758c/1491330680912/order-online-2.png" alt="order1" width="50"><br/>
+
+    <form class="check-f" id="checkout-form" method="POST" action="https://formspree.io/kxmb382@gmail.com">
+        <label for="client-name"> Client name:</label>
         <input type="text" name="client-name" id="client-name" required>
         <br>
         <label>
@@ -35,14 +32,25 @@
         </label>
         <br>
         <label>
-            Favorite carbrand:<input type="text" name="favorite-carbrand" 
-            placeholder="carbrand">
-        </label>
+        Client phone:<input
+class="input-text check-phone-input-full-text check-input-text"
+id="reciever_phone"
+name="user[phone][title]"
+pattern="[0-9]{4}"
+required="required"
+tabindex="4"
+type="tel"
+data-title="mobile phone"
+>
+<br>
+<label for="client-name"> Client city--:</label>
+        <input type="text" name="client-city" id="client-city" required>
+</label>
         <br>
         <input type="submit">
         <input type="reset">
+        
     </form>
-
 
 </body>
 
