@@ -36,15 +36,17 @@
 class="input-text check-phone-input-full-text check-input-text"
 id="reciever_phone"
 name="user[phone][title]"
-pattern="[0-9]{4}"
+pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}"
+placeholder="+380"
 required="required"
 tabindex="4"
 type="tel"
 data-title="mobile phone"
 >
+</label>
 <br>
-<label for="client-name"> Client city--:</label>
-        <input type="text" name="client-city" id="client-city" required>
+<label>
+  Client city--:<input type="text" name="client-city">
 </label>
         <br>
         <input type="submit">
