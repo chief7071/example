@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="icon.ico" rel="stylesheet" type="text/css" />
+            <link href="icon.ico" rel="shortcut icon" type="image/x-icon" />
     <title>Fominovsite</title>
 </head>
 
@@ -31,12 +33,16 @@
             <input type="radio" name="client-gender" value="other">Other
         </label>
         <br>
+          <p><b>What is IP?&quot;?</b></p>
+    <p><input type="radio" name="answer" value="a1">Inrenet programm<Br>
+  <input type="radio" name="answer" value="a2">Internet portal<Br>
+  <input type="radio" name="answer" value="a3">Internet protocol</p>
         <label>
         Client phone:<input
 class="input-text check-phone-input-full-text check-input-text"
 id="reciever_phone"
 name="user[phone][title]"
-pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}"
+pattern="[0-9]{10}"
 placeholder="+380"
 required="required"
 tabindex="4"
@@ -52,8 +58,9 @@ data-title="mobile phone"
         <input type="submit">
         <input type="reset">
         
+        
     </form>
-
+    
 </body>
 
 </html>
