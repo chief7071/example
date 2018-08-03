@@ -1,11 +1,14 @@
-function quad(form) {
-a=eval(form.a.value);
-b=eval(form.b.value);
-c=eval(form.c.value);
-x1=-b/2/a+Math.pow(Math.pow(b,2)-4*a*c,0.5)/2/a;
-x2=-b/2/a-Math.pow(Math.pow(b,2)-4*a*c,0.5)/2/a;
-form.x1.value = x1;
-form.x2.value = x2;
-if (form.x1.value == "NaN") form.x1.value="Error";
-if (form.x2.value == "NaN") form.x2.value="Error";
+function fib(n) {
+  var a = 1,
+    b = 1;
+  for (var i = 3; i <= n; i++) {
+    var c = a + b;
+    a = b;
+    b = c;
+  }
+  return b;
 }
+
+alert( fib(3) ); // 2
+alert( fib(7) ); // 13
+alert( fib(77) ); // 5527939700884757// JavaScript File
