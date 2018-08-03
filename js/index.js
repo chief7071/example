@@ -1,14 +1,9 @@
 function fib(n) {
-  var a = 1,
-    b = 1;
-  for (var i = 3; i <= n; i++) {
+ var a = 1, b = 1;
+ for (var i = 3; i <= n; i++) {
     var c = a + b;
     a = b;
-    b = c;
-  }
-  return b;
+   b = c;
+ }         
+document.forms[0].write_t.value = b;
 }
-
-alert( fib(3) ); // 2
-alert( fib(7) ); // 13
-alert( fib(77) ); // 5527939700884757// JavaScript File
